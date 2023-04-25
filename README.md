@@ -1,2 +1,5 @@
-# alx-low_level_programming
-starting to code in C programming
+>this is a project about nested while and for loops
+
+| task | function |
+| ----- | ------ |
+| task 1 | 

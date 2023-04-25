@@ -1,0 +1,11 @@
+#include "main.h"
+#include <string.h>
+/**
+ *_strspn - find length of substring
+ *@s: pointer to string to search
+ *@accept: pointer to the set of character to accept
+ *Return: on success (0)
+ */
+unsigned int _strspn(char *s, char *accept)
+{
+		
