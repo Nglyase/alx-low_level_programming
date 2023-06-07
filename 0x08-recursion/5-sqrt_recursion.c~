@@ -1,0 +1,48 @@
+#include "main.h"
+/**
+ *_sqrt_recursion - returns square root of a number
+ *@n: the number
+ *Return: Square root
+ */
+#include "main.h"
+
+/**
+ * check_sqrt - helper function to recursively check for the square root
+ * @start: the starting point to check for the square root
+ * @n: the number to find the square root of
+ *
+ * Return: the natural square root or -1 if it doesn't exist
+ */
+int check_sqrt(int start, int n)
+{
+	/* If start^2 is equal to n, return start */
+	if (start * start == n)
+	{
+		return (start);
+	}
+	/* If start^2 is greater than n, square root doesn't exist */
+	if (start * start > n)
+	{
+		return (-1);
+	}
+	/* Recursively check for the square root with the next integer */
+	return (check_sqrt(start + 1, n));
+}
+
+/**
+ * _sqrt_recursion - returns the natural square root of a number
+ * @n: the number to find the square root of
+ *
+ * Return: the natural square root or -1 if it doesn't exist
+ */
+int _sqrt_recursion(int n)
+{
+	/* If n is 0, return 0 */
+	if (n == 0)
+	{
+		return (0);
+	}
+
+	/* Call the helper function with a starting point of 1 */
+	return (check_sqrt(1, n));
+}
