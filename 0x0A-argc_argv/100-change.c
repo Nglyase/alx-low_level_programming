@@ -1,0 +1,39 @@
+#include "main.h"
+/**
+ *main -prints min coins to make change
+ *@argc: argument counter
+ *@argv: argument vector
+ *Return: on success 0
+ */
+int main(int argc, char *argv[])
+{
+	int n;
+	int *ptr;
+	int bal = 0;
+	int r[5] = {25, 10, 5, 2, 1};
+
+	if (argc != 2)
+	{
+		printf("Error\n");
+		return (0);
+	}
+	if (atoi(argv[1]) < 0)
+	{
+		printf("0\n");
+		return (0);
+	}
+	ptr = r;
+	n = atoi(argv[1]);
+	while (ptr < r + 5 && n != 0)
+	{
+		if (n >= *ptr)
+		{
+			bal += n / *ptr;
+			n = n % *ptr;
+		}
+		else
+			ptr++;
+	}
+	printf("%d\n", bal);
+	return (0);
+}

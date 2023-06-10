@@ -1,1 +1,1 @@
-This is a static library containing majority of the functions we created in C
+A static library containing majority of the functions we created in C
