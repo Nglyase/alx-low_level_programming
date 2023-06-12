@@ -2,6 +2,6 @@
 
 int main(void)
 {
-	_puts("\"At the end of the day, my goal was to be the best\"\n\t- Kevin Mitnick");
+	_puts("\"At the end of day, my goal was to be the best"- Kevin Mitnick");
 	return (0);
 }
