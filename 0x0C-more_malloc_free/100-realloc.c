@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdlib.h>
+
 /**
  *_realloc - reallocates memory
  *@ptr: pointer to allocated memory
@@ -7,8 +9,7 @@
  *Return: A pointer
  */
 
-void *_realloc(void *ptr, unsigned int old_size, unsigned int new\
-	       _size)
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	char *n;
 	char *j = ptr;
