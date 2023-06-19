@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+/**
+ *  main - Entry point
+ *
+ * Return: On success 0
+ */
+
+int main(void)
+{
+	printf("__2-main__ \n");
+	return (0);
+}
