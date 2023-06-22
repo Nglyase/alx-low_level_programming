@@ -1,9 +1,9 @@
-#include "calc.h"
+#include "3-calc.h"
 
 /**
- * get_op_func - selects correct function
- *@s: the operator
- *Return: An int
+ *get_op_func - this function selects the operator to use
+ *@s: operator
+ *Return: a pointer to function
  */
 int (*get_op_func(char *s))(int, int)
 {
