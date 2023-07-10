@@ -21,13 +21,16 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
-		return(0);
+		return (0);
 
 	buf = malloc(sizeof(char) * (letters));
 	if (!buf)
-		return(0);
+		return (0);
 
 	bytread = read(fd, buf, letters);
+	if (bytread == -1)
+		return (0);
+
 	bytwrite = write(STDOUT_FILENO, buf, bytread);
 
 	close(fd);
